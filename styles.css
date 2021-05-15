@@ -4,10 +4,7 @@
 }
 
 .topnav {
-  border-bottom-color: blueviolet; /*why no work? */
-  border-bottom-width: 10px;
-  /* display: flex;
-  flex-direction: column; */
+  border-bottom: 2px solid lightgray;
 }
 
 img {
@@ -21,6 +18,42 @@ img {
   margin: 10px;
 }
 
+.search {
+  width: 20%;
+  position: relative;
+  display: flex;
+  align-self: center;
+}
+
+.searchTerm {
+  width: 100%;
+  border-right: none;
+  padding: 5px;
+  height: 24px;
+  border: none;
+  box-shadow: 2px 3px 3px 1px lightgray;
+  border-radius: 15px 0 0 15px;
+  background-color: white;
+}
+
+.searchTerm:focus{
+  color: lightslategray;
+}
+
+.searchButton {
+  width: 40px;
+  height: 34px;
+  border: 1px solid #4b4e4e;
+  background: white;
+  text-align: center;
+  color: rgb(100, 93, 93);
+  border-radius: 0 15px 15px 0;
+  border: none;
+  box-shadow: 2px 3px 3px 1px lightgray;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -30,6 +63,7 @@ ul {
 li {
   float: left;
   cursor: pointer;
+  margin: 5px;
 }
 
 a {
@@ -44,14 +78,14 @@ a {
   display: flex;
   flex-direction: column;
   float: left;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 h3 {
-  color: blue;
+  color: mediumblue;
   font-size: larger;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 h3:hover {
@@ -60,6 +94,10 @@ h3:hover {
 
 p {
   margin: 10px;
+  font-size: small;
+  color: darkslategrey;
+  line-height: 20px;
+  padding: 0 0 30px 0;
 }
 
 ul, h3, p {
